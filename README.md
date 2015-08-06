@@ -11,8 +11,8 @@ You must have Git installed, and you must have Sudo privileges.
 ## Procedure
 Open a terminal window, and enter the following commands:
 <pre>
-git clone https://github.com/jhsu802701/docker-install-32bit-debian-jessie-install.git
-cd docker-install-32bit-debian-jessie-install
+git clone https://github.com/jhsu802701/docker-32bit-debian-jessie-install.git
+cd docker-32bit-debian-jessie-install
 sh main.sh
 </pre>
 
