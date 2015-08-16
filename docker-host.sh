@@ -22,7 +22,7 @@ sudo apt-get update
 # Install Docker
 echo '--------------------'
 echo 'Installing docker.io'
-sudo apt-get install docker.io
+sudo apt-get install -y docker.io
 
 # Remove backports
 echo '----------------'
