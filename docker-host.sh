@@ -5,9 +5,9 @@ echo 'Begin installing Docker'
 echo '+++++++++++++++++++++++'
 
 # Prerequisites for Docker
-echo '------------------------------------'
-echo 'sudo apt-get install -y libapparmor1'
-sudo apt-get install -y libapparmor1
+echo '---------------------------------------------'
+echo 'sudo apt-get install -y libapparmor1 apparmor'
+sudo apt-get install -y libapparmor1 apparmor
 
 echo '--------------------------------------'
 echo 'sudo apt-get install -y cgroupfs-mount'
@@ -40,6 +40,7 @@ sudo groupadd docker
 echo "sudo gpasswd -a ${LOGNAME} docker"
 sudo gpasswd -a ${LOGNAME} docker
 
+echo '---------------------------'
 echo 'sudo service docker restart'
 sudo service docker restart
 
