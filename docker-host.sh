@@ -1,13 +1,33 @@
 #!/bin/bash
 
+echo '-------------------'
+echo 'sudo apt-get update'
+sudo apt-get update
+
+echo '--------------------------------'
+echo 'sudo apt-get install -y keepassx'
+sudo apt-get install -y keepassx
+
+echo '-----------------------------'
+echo 'sudo apt-get install -y geany'
+sudo apt-get install -y geany
+
+echo '-------------------------------------'
+echo 'sudo apt-get install -y sqlitebrowser'
+sudo apt-get install -y sqlitebrowser
+
+echo '--------------------------------'
+echo 'sudo apt-get install -y pgadmin3'
+sudo apt-get install -y pgadmin3
+
 echo '+++++++++++++++++++++++'
 echo 'Begin installing Docker'
 echo '+++++++++++++++++++++++'
 
 # Prerequisites for Docker
-echo '---------------------------------------------'
-echo 'sudo apt-get install -y libapparmor1 apparmor'
-sudo apt-get install -y libapparmor1 apparmor
+echo '------------------------------------'
+echo 'sudo apt-get install -y libapparmor1'
+sudo apt-get install -y libapparmor1
 
 echo '--------------------------------------'
 echo 'sudo apt-get install -y cgroupfs-mount'
@@ -43,6 +63,8 @@ sudo gpasswd -a ${LOGNAME} docker
 echo '---------------------------'
 echo 'sudo service docker restart'
 sudo service docker restart
+
+wait
 
 echo '--------------'
 echo 'docker version'
