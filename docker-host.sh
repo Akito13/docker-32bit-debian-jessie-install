@@ -12,6 +12,10 @@ echo '-----------------------------'
 echo 'sudo apt-get install -y geany'
 sudo apt-get install -y geany
 
+echo '------------------------------------'
+echo 'sudo apt-get install -y searchmonkey'
+sudo apt-get install -y searchmonkey
+
 echo '-------------------------------------'
 echo 'sudo apt-get install -y sqlitebrowser'
 sudo apt-get install -y sqlitebrowser
