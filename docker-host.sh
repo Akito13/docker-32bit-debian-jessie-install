@@ -1,25 +1,31 @@
 #!/bin/bash
 
+# Update software list
 echo '-------------------'
 echo 'sudo apt-get update'
 sudo apt-get update
 
+# Generates, encrypts, and saves passwords
 echo '--------------------------------'
 echo 'sudo apt-get install -y keepassx'
 sudo apt-get install -y keepassx
 
+# Editor
 echo '-----------------------------'
 echo 'sudo apt-get install -y geany'
 sudo apt-get install -y geany
 
+# File search
 echo '------------------------------------'
 echo 'sudo apt-get install -y searchmonkey'
 sudo apt-get install -y searchmonkey
 
+# View SQLite database
 echo '-------------------------------------'
 echo 'sudo apt-get install -y sqlitebrowser'
 sudo apt-get install -y sqlitebrowser
 
+# View PostgreSQL database
 echo '--------------------------------'
 echo 'sudo apt-get install -y pgadmin3'
 sudo apt-get install -y pgadmin3
