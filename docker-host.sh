@@ -3,6 +3,8 @@
 # Update software list
 echo '-------------------'
 echo 'sudo apt-get update'
+echo ''
+echo ''
 sudo apt-get update
 
 # Generates, encrypts, and saves passwords
@@ -73,6 +75,12 @@ sudo gpasswd -a ${LOGNAME} docker
 echo '---------------------------'
 echo 'sudo service docker restart'
 sudo service docker restart
+
+wait
+
+echo '--------------'
+echo 'docker version'
+docker version
 
 wait
 
