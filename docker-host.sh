@@ -78,12 +78,4 @@ sudo service docker restart
 
 wait
 
-echo '--------------'
-echo 'docker version'
-docker version
-
-wait
-
-echo '--------------'
-echo 'docker version'
-docker version
+sh docker-version.sh
